@@ -1,4 +1,4 @@
-# Turtlebot on Ubuntu 20.04
+# Turtlebot 2 on Ubuntu 20.04 and WSL
 ## Install ROS Noetic
 
 ```

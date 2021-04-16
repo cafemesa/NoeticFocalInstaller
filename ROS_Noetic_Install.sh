@@ -16,7 +16,7 @@ sudo apt update
 sudo apt install ros-noetic-desktop-full -y
 
 ## Environment setup
-rossource="source /opt/ros/melodic/setup.bash"
+rossource="source /opt/ros/noetic/setup.bash"
 echo "$rossource" >> ~/.bashrc
 eval $rossource
 
