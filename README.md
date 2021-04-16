@@ -19,9 +19,9 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl -l -v  
 ```
     1. If version is 2
-    ```
-    wsl --set-version <distribution name> 1
-    ```
+```
+wsl --set-version <distribution name> 1
+```
 
 ## Install VcXsrv Windows X Server
 
