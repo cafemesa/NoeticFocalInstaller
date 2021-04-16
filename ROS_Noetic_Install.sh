@@ -21,7 +21,7 @@ echo "$rossource" >> ~/.bashrc
 eval $rossource
 
 ## Dependencies for building packages
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
 sudo rosdep init
 rosdep update
 
