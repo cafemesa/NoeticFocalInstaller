@@ -2,23 +2,22 @@
 
 ## Install Ubuntu 20.04 subsystem
 
-1. Open Windows PowerShell as Administrator
-1. Enable the Windows Subsystem for Linux
+1. Enable the Windows Subsystem for Linux (PowerShell as Administrator)
     ``` 
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart  
     ```
-1. Enable Virtual Machine feature
+1. Enable Virtual Machine feature (PowerShell as Administrator)
     ``` 
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart 
     ```
 1. Restar PC
 1. Install Ubuntu 20.04 using Microsoft Store
 1. Open Ubuntu 20.04 and set your user and password
-1. Check WSL version
+1. Check WSL version(PowerShell as Administrator)
     ``` 
     wsl -l -v 
     ```
-1. If version is 2
+    1. If version is 2 (PowerShell as Administrator)
 
     ``` 
     wsl --set-version <distribution name> 1 
