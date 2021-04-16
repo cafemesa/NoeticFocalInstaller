@@ -13,7 +13,7 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
 
 ## Installation
 sudo apt update
-sudo apt install ros-noetic-desktop-full
+sudo apt install ros-noetic-desktop-full -y
 
 ## Environment setup
 rossource="source /opt/ros/melodic/setup.bash"

@@ -1,5 +1,6 @@
 # Turtlebot on Ubuntu 20.04
 ## Install ROS Noetic
 
-wget https://github.com/cafemesa/Xenial_Noetic/blob/main/ROS_Noetic_Install.sh
-bash ROS_Noetic_Install.sh
+`git clone https://github.com/cafemesa/Focal_Noetic_WSL`
+`~/Focal_Noetic_WSL/`
+`bash ./ROS_Noetic_Install.sh`
