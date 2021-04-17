@@ -34,3 +34,18 @@ git clone https://github.com/cafemesa/Focal_Noetic_WSL
 cd ~/Focal_Noetic_WSL/
 bash ./ROS_Noetic_Install.sh
 ```
+
+## Compile Turtlebot 2 packages for noetic
+
+```
+cd ~/Focal_Noetic_WSL/
+bash ./TurtleBot2.sh
+```
+
+### Fix Turtlebot Teleoperation execution error
+
+Replace line 160 from « (e_errno, msg, *_) = e.args » to « (e_errno, msg) = e.args »
+
+```
+sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py 
+```

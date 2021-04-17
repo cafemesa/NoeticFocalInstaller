@@ -1,7 +1,10 @@
+# Go to src folder
+cd ~/catkin_ws/src/
+
+# Install GIT
 sudo apt-get install git -y
 
-
-#Turtlebot Packages
+# Turtlebot Packages
 git clone https://github.com/turtlebot/turtlebot.git
 git clone https://github.com/turtlebot/turtlebot_msgs.git
 git clone https://github.com/turtlebot/turtlebot_apps.git
@@ -25,7 +28,7 @@ git clone --branch melodic-devel https://github.com/ros-perception/ar_track_alva
 mv ar_track_alvar/ar_track_alvar_msgs ./
 rm -rf ar_track_alvar
 
-#Dependencies
+# Dependencies
 sudo apt-get install ros-noetic-openslam-gmapping -y
 sudo apt-get install ros-noetic-ecl-build  -y
 sudo apt-get install ros-noetic-ecl-geometry -y
@@ -54,18 +57,6 @@ python -m pip install rospkg
 sudo apt-get install libqt5core5a
 sudo strip --remove-section=.note.ABI-tag /lib/x86_64-linux-gnu/libQt5Core.so.5
 
-cd ..
+cd ~/catkin_ws/
 catkin_make
-echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
-## Grphics variables
-#export LIBGL_ALWAYS_INDIRECT=
-#export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
-#export DISPLAY="`sed -n 's/nameserver //p' /etc/resolv.conf`:0"
-#export DISPLAY=$(ip route|awk '/^default/{print $3}'):0.0
-
-# For teleoperation
-# sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py 
-# replace line 160 
-# from (e_errno, msg, *_) = e.args
-# to (e_errno, msg) = e.args
