@@ -46,6 +46,7 @@ sudo apt-get install libftdi-dev -y
 sudo apt-get install ros-noetic-amcl -y
 sudo apt-get install ros-noetic-map-server -y
 sudo apt-get install pyqt5-dev-tools -y
+sudo apt-get install gedit -y
 
 sudo apt-get install python -y
 sudo apt-get install curl

@@ -17,10 +17,10 @@
     ``` 
     wsl -l -v 
     ```
-    1. If version is 2 (PowerShell as Administrator)
+    1. If version is 2 change to 1 (PowerShell as Administrator)
 
     ``` 
-    wsl --set-version <distribution name> 1 
+    wsl --set-version Ubuntu-20.04 1 
     ```
 
 ## Install VcXsrv Windows X Server
@@ -44,7 +44,7 @@ bash ./TurtleBot2.sh
 
 ### Fix Turtlebot Teleoperation execution error
 
-Replace line 160 from « (e_errno, msg, *_) = e.args » to « (e_errno, msg) = e.args »
+Replace line 160 from « (e_errno, msg, *_) = e.args » to « (e_errno, msg) = e.args » in tcpros_base.py file. Use the next command to open the file
 
 ```
 sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py 
