@@ -19,6 +19,10 @@ git clone https://github.com/yujinrobot/kobuki_core.git
 git clone https://github.com/ros-perception/depthimage_to_laserscan.git
 git clone https://github.com/ros-perception/slam_gmapping.git
 
+# Velodyne driver and simulator
+git clone https://github.com/ros-drivers/velodyne.git
+git clone https://bitbucket.org/DataspeedInc/velodyne_simulator.git
+
 # yocs_controllers
 git clone https://github.com/yujinrobot/yocs_msgs.git
 git clone https://github.com/yujinrobot/yujin_ocs.git
