@@ -71,9 +71,7 @@ cd ~/Focal_Noetic_WSL/
 bash ./TurtleBot2.sh
 ```
 
-### Fix Turtlebot Teleoperation execution error
-
-Replace line 160 from « (e_errno, msg, *_) = e.args » to « (e_errno, msg) = e.args » in tcpros_base.py file. Use the next command to open the file
+To fix the Turtlebot Teleoperation execution error replace line 160 from « (e_errno, msg, *_) = e.args » with « (e_errno, msg) = e.args » in tcpros_base.py file. Use the next command to open the file
 
 ```
 sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py 
