@@ -27,6 +27,10 @@ git clone https://bitbucket.org/DataspeedInc/velodyne_simulator.git
 git clone https://github.com/yujinrobot/yocs_msgs.git
 git clone https://github.com/yujinrobot/yujin_ocs.git
 
+# Clone tutorial files
+git clone https://github.com/cafemesa/PFF.git
+git clone https://github.com/cafemesa/Project_ss2021.git
+
 # ar_track_alvar_msgs
 git clone --branch melodic-devel https://github.com/ros-perception/ar_track_alvar.git
 mv ar_track_alvar/ar_track_alvar_msgs ./
@@ -63,5 +67,6 @@ sudo apt-get install libqt5core5a
 sudo strip --remove-section=.note.ABI-tag /lib/x86_64-linux-gnu/libQt5Core.so.5
 
 cd ~/catkin_ws/
+rosdep install --from-path src -i -y -r
 catkin_make
 
