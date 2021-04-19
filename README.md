@@ -49,22 +49,22 @@ git clone https://github.com/cafemesa/Focal_Noetic_WSL
 cd ~/Focal_Noetic_WSL/
 ```
 
-### For Ubuntu WSL on Windows 
+### 2.1. For Ubuntu WSL on Windows 
 ```
 bash ./Ubuntu_WSL.sh
 ```
 
-### For Ubuntu in Virtual machine 
+### 2.2. For Ubuntu in Virtual machine 
 ```
 bash ./Ubuntu_virtual_machine.sh
 ```
 
-### For Ubuntu alongside
+### 2.3. For Ubuntu alongside
 ```
 bash ./Ubuntu_alongside.sh
 ```
 
-## Compile Turtlebot 2 packages for noetic
+## 3. Compile Turtlebot 2 packages for noetic
 
 ```
 cd ~/Focal_Noetic_WSL/
