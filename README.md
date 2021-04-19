@@ -40,7 +40,7 @@ To install Ubuntu 20.04 alongside Windows 10 refer to this video that explain th
 
 ## Install ROS Noetic
 
-We have created some scripts to facilitate the installation of ROS and the packages needed for the tutorials. If you are using Ubuntu on Windows WSL just open Ubuntu or if you are using Ubuntu 
+We have created some scripts to facilitate the installation of ROS and the packages needed for the tutorials. If you are using Ubuntu on Windows WSL just open Ubuntu or if you are using Ubuntu alongside or a virtual machine open terminal and execute the following scripts.
 
 ```
 cd ~/ 
