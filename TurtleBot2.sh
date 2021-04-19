@@ -29,6 +29,7 @@ git clone https://github.com/yujinrobot/yujin_ocs.git
 
 # Clone tutorial files
 git clone https://github.com/cafemesa/PFF.git
+git clone https://github.com/cafemesa/PFF_PeD.git
 git clone https://github.com/cafemesa/Project_ss2021.git
 
 # ar_track_alvar_msgs
