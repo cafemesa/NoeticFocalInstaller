@@ -1,8 +1,8 @@
 # Turtlebot 2 on Ubuntu 20.04 and WSL
 
-## Install Ubuntu 20.04
+## 1. Install Ubuntu 20.04
 
-### Windows 
+### 1.1. Windows 
 
 1. Enable the Windows Subsystem for Linux (PowerShell as Administrator)
     ``` 
@@ -30,15 +30,15 @@
     https://sourceforge.net/projects/vcxsrv/
     ```
 
-### MacOS and VirtualBox
+### 1.2. MacOS and VirtualBox
 
 To install Ubuntu 20.04 on MacOs using VirtualBox refer to this video that explain the complete process: https://www.youtube.com/watch?v=Hzji7w882OY
 
-### Ubuntu 20.04 alongside Windows 10
+### 1.3. Ubuntu 20.04 alongside Windows 10
 
 To install Ubuntu 20.04 alongside Windows 10 refer to this video that explain the complete process: https://www.youtube.com/watch?v=Z-Hv9hOaKso
 
-## Install ROS Noetic
+## 2. Install ROS Noetic
 
 We have created some scripts to facilitate the installation of ROS and the packages needed for the tutorials. If you are using Ubuntu on Windows WSL just open Ubuntu or if you are using Ubuntu alongside or a virtual machine open terminal and execute the following scripts.
 
