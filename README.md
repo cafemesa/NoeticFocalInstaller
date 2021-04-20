@@ -64,14 +64,8 @@ bash ./Ubuntu_virtual_machine.sh
 bash ./Ubuntu_alongside.sh
 ```
 
-**FOR ALL** finish running the next scripts
+**FOR ALL** finish running the next script
 ```
-sudo apt install python2 -y
-sudo apt-get install curl
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
-sudo python2 get-pip.py
-python -m pip install pyyaml
-python -m pip install rospkg
 source ~/.bashrc
 ```
 
@@ -94,21 +88,21 @@ sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py
 
 1. RGB-D Camera
     - First terminal: `roslaunch project_2021 Perception_camera.launch`
-    - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
+    - Second terminal: `roslaunch kobuki_keyop keyop.launch`
 
 1. 3D LiDAR
     - First terminal: `roslaunch project_2021 Perception_velodyne.launch`
-    - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
+    - Second terminal: `roslaunch kobuki_keyop keyop.launch`
 
 ### 4.2. Mapping
 
 1. RGB-D Camera
     - First terminal: `roslaunch project_2021 Mapping_camera.launch`
-    - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
+    - Second terminal: `roslaunch kobuki_keyop keyop.launch`
 
 1. 3D LiDAR
     - First terminal: `roslaunch project_2021 Mapping_velodyne.launch`
-    - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
+    - Second terminal: `roslaunch kobuki_keyop keyop.launch`
 
 ### 4.3. Navigation
 
