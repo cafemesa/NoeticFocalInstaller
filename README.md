@@ -109,8 +109,5 @@ sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py
 
 ### 4.4. People detection
 
-1. RGB-D Camera
-    - First terminal: 
-
 1. 3D LiDAR
     - First terminal: `roslaunch project_2021 People_Detection_velodyne.launch`
