@@ -64,7 +64,7 @@ bash ./Ubuntu_virtual_machine.sh
 bash ./Ubuntu_alongside.sh
 ```
 
-For all finish running with the next script
+**FOR ALL** finish running the next script
 ```
 source ~/.bashrc
 ```
