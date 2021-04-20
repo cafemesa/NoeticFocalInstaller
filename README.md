@@ -64,6 +64,11 @@ bash ./Ubuntu_virtual_machine.sh
 bash ./Ubuntu_alongside.sh
 ```
 
+For all finish running with the next script
+```
+source ~/.bashrc
+```
+
 ## 3. Compile Turtlebot 2 packages for noetic
 
 ```
