@@ -89,3 +89,20 @@ sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py
     - First terminal: `roslaunch project_2021 Perception_velodyne.launch`
     - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
 
+### 4.1. Mapping
+
+1. RGB-D Camera
+    - First terminal: `roslaunch project_2021 Mapping_camera.launch`
+    - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
+
+1. 3D LiDAR
+    - First terminal: `roslaunch project_2021 Mapping_velodyne.launch`
+    - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
+
+### 4.1. Navigation
+
+1. RGB-D Camera
+    - First terminal: `roslaunch project_2021 Navigation_camera.launch`
+
+1. 3D LiDAR
+    - First terminal: `roslaunch project_2021 Navigation_velodyne.launch`
