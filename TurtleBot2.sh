@@ -57,10 +57,10 @@ sudo apt-get install ros-noetic-map-server -y
 sudo apt-get install pyqt5-dev-tools -y
 sudo apt-get install gedit -y
 
-sudo apt-get install python -y
+sudo apt install python2 -y
 sudo apt-get install curl
-curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.py
-python get-pip.py
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+sudo python2 get-pip.py
 python -m pip install pyyaml
 python -m pip install rospkg
 
