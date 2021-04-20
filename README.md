@@ -76,3 +76,16 @@ To fix the Turtlebot Teleoperation execution error replace line 160 from « (e_e
 ```
 sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py 
 ```
+
+## 4. Run the example files
+
+### 4.1. Perception
+
+1. RGB-D Camera
+    - First terminal: `roslaunch project_2021 Perception_camera.launch`
+    - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
+
+1. 3D LiDAR
+    - First terminal: `roslaunch project_2021 Perception_velodyne.launch`
+    - Second terminal: `roslaunch turtlebot_teleop keyboard_teleop.launch`
+
