@@ -64,8 +64,14 @@ bash ./Ubuntu_virtual_machine.sh
 bash ./Ubuntu_alongside.sh
 ```
 
-**FOR ALL** finish running the next script
+**FOR ALL** finish running the next scripts
 ```
+sudo apt install python2 -y
+sudo apt-get install curl
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+sudo python2 get-pip.py
+python -m pip install pyyaml
+python -m pip install rospkg
 source ~/.bashrc
 ```
 
