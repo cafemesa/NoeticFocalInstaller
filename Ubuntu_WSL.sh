@@ -29,7 +29,7 @@ rosdep update
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin_make
-rossource2="~/catkin_ws/devel/setup.bash"
+rossource2="source ~/catkin_ws/devel/setup.bash"
 echo "$rossource2" >> ~/.bashrc
 echo "cd ~/catkin_ws" >> ~/.bashrc
 
