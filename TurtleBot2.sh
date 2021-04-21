@@ -31,6 +31,7 @@ git clone https://github.com/yujinrobot/yujin_ocs.git
 git clone https://github.com/cafemesa/PFF.git
 git clone https://github.com/cafemesa/PFF_PeD.git
 git clone https://github.com/cafemesa/Project_ss2021.git
+git clone https://github.com/cafemesa/PFF_SeM.git
 
 # ar_track_alvar_msgs
 git clone --branch melodic-devel https://github.com/ros-perception/ar_track_alvar.git
