@@ -3,6 +3,7 @@ cd ~/catkin_ws/src/
 
 # Install GIT
 sudo apt-get install git -y
+sudo apt-get install openjdk-8-jdk -y
 
 # Turtlebot Packages
 git clone https://github.com/turtlebot/turtlebot.git
@@ -32,6 +33,9 @@ git clone https://github.com/cafemesa/PFF.git
 git clone https://github.com/cafemesa/PFF_PeD.git
 git clone https://github.com/cafemesa/Project_ss2021.git
 git clone https://github.com/cafemesa/PFF_SeM.git
+
+# Clone ROS JAVA
+git clone https://github.com/cafemesa/rosjava_build_tools.git
 
 # ar_track_alvar_msgs
 git clone --branch melodic-devel https://github.com/ros-perception/ar_track_alvar.git
