@@ -116,3 +116,45 @@ sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py
 
 1. 3D LiDAR
     - First terminal: `roslaunch project_2021 People_Detection_velodyne.launch`
+
+
+## 4. ROS-Java Installation
+1. Install Ubuntu 16.04 as Ubuntu 20.04 was installed, using Microsoft store.
+1. Open Ubuntu 16.04 an set your user and password
+1. Check WSL version for Ubuntu 16.04 (PowerShell as Administrator)
+    ``` 
+    wsl -l -v 
+    ```
+    1. If version is 2 change to 1 (PowerShell as Administrator)
+
+    ``` 
+    wsl --set-version Ubuntu-16.04 1 
+    ```
+1. Go to your user folder 
+    ```
+    cd ~/
+    ```
+1. Install Git tools
+    ```
+    sudo apt-get install git -y
+    ```
+1. Clone the repository with the scripts
+    ```
+    git clone https://github.com/cafemesa/Focal_Noetic_WSL
+    ```
+1. Enter to the cloned folder
+    ```
+    cd ~/Focal_Noetic_WSL/
+    ```
+1. Execute the installation script.
+    ```
+    . ./Kinetic_WSL.sh
+    ```
+1. Go to rosjava folder
+    ```
+    cd ~/rosjava/
+    ```
+1. Compile
+    ```
+    catkin_make
+    ```
