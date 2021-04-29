@@ -119,6 +119,7 @@ echo "export DISPLAY=\"`grep nameserver /etc/resolv.conf | sed 's/nameserver //'
 echo "export DISPLAY=\"`sed -n 's/nameserver //p' /etc/resolv.conf`:0\"" >> ~/.bashrc
 echo "export DISPLAY=$(ip route|awk '/^default/{print $3}'):0.0" >> ~/.bashrc
 
+chmod +x ~/catkin_ws/src/rosjava_build_tools/src/rosjava_build_tools/gradle/gradlew
 
 rossource3="source ~/.bashrc"
 eval $rossource3

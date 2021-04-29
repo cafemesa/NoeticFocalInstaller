@@ -113,5 +113,7 @@ rosdep install --from-path src -i -y -r
 catkin_make
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
+chmod +x ~/catkin_ws/src/rosjava_build_tools/src/rosjava_build_tools/gradle/gradlew
+
 rossource3="source ~/.bashrc"
 eval $rossource3
