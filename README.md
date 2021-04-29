@@ -6,7 +6,7 @@
 
 1. Enable the Windows Subsystem for Linux (PowerShell as Administrator)
     ``` 
-    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart  
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
     ```
 1. Enable Virtual Machine feature (PowerShell as Administrator)
     ``` 
@@ -38,7 +38,7 @@ To install Ubuntu 20.04 on MacOs using VirtualBox refer to this video that expla
 
 To install Ubuntu 20.04 alongside Windows 10 refer to this video that explain the complete process: https://www.youtube.com/watch?v=Z-Hv9hOaKso
 
-## 2. Install ROS Noetic
+## 2. Install ROS Noetic and Packages
 
 We have created some scripts to facilitate the installation of ROS and the packages needed for the tutorials. If you are using Ubuntu on Windows WSL just open Ubuntu or if you are using Ubuntu alongside or a virtual machine open terminal and execute the following scripts.
 
@@ -51,40 +51,23 @@ cd ~/Focal_Noetic_WSL/
 
 ### 2.1. For Ubuntu WSL on Windows 
 ```
-bash ./Ubuntu_WSL.sh
+bash ./Final_Noetic_WSL.sh
 ```
 
-### 2.2. For Ubuntu in Virtual machine 
+### 2.2. For Ubuntu in Virtual machine or alongside
 ```
-bash ./Ubuntu_virtual_machine.sh
-```
-
-### 2.3. For Ubuntu alongside
-```
-bash ./Ubuntu_alongside.sh
+bash ./Final_Noetic_Alongisde.sh
 ```
 
-**FOR ALL** finish running the next script
-```
-source ~/.bashrc
-```
-
-## 3. Compile Turtlebot 2 packages for noetic
-
-```
-cd ~/Focal_Noetic_WSL/
-bash ./TurtleBot2.sh
-```
-
-To fix the Turtlebot Teleoperation execution error replace line 160 from « (e_errno, msg, *_) = e.args » with « (e_errno, msg) = e.args » in tcpros_base.py file. Use the next command to open the file
+**FOR ALL** To fix the Turtlebot Teleoperation execution error replace line 160 from « (e_errno, msg, *_) = e.args » with « (e_errno, msg) = e.args » in tcpros_base.py file. Use the next command to open the file
 
 ```
 sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py 
 ```
 
-## 4. Run the example files
+## 3. Run the example files
 
-### 4.1. Perception
+### 3.1. Perception
 
 1. RGB-D Camera
     - First terminal: `roslaunch project_2021 Perception_camera.launch`
@@ -94,7 +77,7 @@ sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py
     - First terminal: `roslaunch project_2021 Perception_velodyne.launch`
     - Second terminal: `roslaunch kobuki_keyop keyop.launch`
 
-### 4.2. Mapping
+### 3.2. Mapping
 
 1. RGB-D Camera
     - First terminal: `roslaunch project_2021 Mapping_camera.launch`
@@ -104,7 +87,7 @@ sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py
     - First terminal: `roslaunch project_2021 Mapping_velodyne.launch`
     - Second terminal: `roslaunch kobuki_keyop keyop.launch`
 
-### 4.3. Navigation
+### 3.3. Navigation
 
 1. RGB-D Camera
     - First terminal: `roslaunch project_2021 Navigation_camera.launch`
@@ -112,49 +95,8 @@ sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py
 1. 3D LiDAR
     - First terminal: `roslaunch project_2021 Navigation_velodyne.launch`
 
-### 4.4. People detection
+### 3.4. People detection
 
 1. 3D LiDAR
     - First terminal: `roslaunch project_2021 People_Detection_velodyne.launch`
 
-
-## 4. ROS-Java Installation
-1. Install Ubuntu 16.04 as Ubuntu 20.04 was installed, using Microsoft store.
-1. Open Ubuntu 16.04 an set your user and password
-1. Check WSL version for Ubuntu 16.04 (PowerShell as Administrator)
-    ``` 
-    wsl -l -v 
-    ```
-    1. If version is 2 change to 1 (PowerShell as Administrator)
-
-    ``` 
-    wsl --set-version Ubuntu-16.04 1 
-    ```
-1. Go to your user folder 
-    ```
-    cd ~/
-    ```
-1. Install Git tools
-    ```
-    sudo apt-get install git -y
-    ```
-1. Clone the repository with the scripts
-    ```
-    git clone https://github.com/cafemesa/Focal_Noetic_WSL
-    ```
-1. Enter to the cloned folder
-    ```
-    cd ~/Focal_Noetic_WSL/
-    ```
-1. Execute the installation script.
-    ```
-    . ./Kinetic_WSL.sh
-    ```
-1. Go to rosjava folder
-    ```
-    cd ~/rosjava/
-    ```
-1. Compile
-    ```
-    catkin_make
-    ```
