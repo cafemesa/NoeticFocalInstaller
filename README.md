@@ -144,3 +144,18 @@ rosrun [PACKAGE_NAME] [PROJECT_NAME] com.github.rosjava.[PACKAGE_NAME].[PROJECT_
 ```
 
 
+# For Android Programers
+
+This installer includes a version of base project for android that allows to subscribe to different topics.
+
+
+1. Clone android project
+
+```
+cd ~/
+git clone https://github.com/cafemesa/rosAndroidBaseProject.git
+```
+
+2. Open with Android Studio
+
+3. Compile and run
