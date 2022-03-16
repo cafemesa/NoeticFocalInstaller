@@ -149,13 +149,25 @@ rosrun [PACKAGE_NAME] [PROJECT_NAME] com.github.rosjava.[PACKAGE_NAME].[PROJECT_
 This installer includes a version of base project for android that allows to subscribe to different topics.
 
 
-1. Clone android project
+1. Setup ROS network
+
+    - Open .bashrc file: `gedit ~/.bashrc`
+    - Add the export lines at the end of the file:
+
+```
+Export ROS_IP=[YOUR_PC_IP]
+Export ROS_HOSTNAME=[YOUR_PC_IP]
+Export ROS_MASTER_URI=http://[YOUR_PC_IP]/11311
+```
+
+    - Save and exit
+    - run `source ~/.bashrc`
+
+2. Clone android project
 
 ```
 cd ~/
 git clone https://github.com/cafemesa/rosAndroidBaseProject.git
 ```
 
-2. Open with Android Studio
-
-3. Compile and run
+3. Open with Android Studio
