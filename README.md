@@ -171,3 +171,7 @@ git clone https://github.com/cafemesa/rosAndroidBaseProject.git
 ```
 
 3. Open with Android Studio
+
+4. Setup default IP Server in android project
+
+    - Open LoginActivity.java file located in app-->java-->com.unidue.socialrobotics-->LoginActivity.java
