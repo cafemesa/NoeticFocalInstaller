@@ -175,3 +175,13 @@ git clone https://github.com/cafemesa/rosAndroidBaseProject.git
 4. Setup default IP Server in android project
 
     - Open LoginActivity.java file located in app &#8594; java &#8594; com.unidue.socialrobotics &#8594; LoginActivity.java
+
+    - Modify the line 42 with your correct IP:
+
+    ```
+    editor.putString("MasterIP", "[YOUR_PC_IP]");
+    ```
+
+4. Run Turlebot Navigation Example `roslaunch project_2021 Navigation_velodyne.launch`
+
+5. Compile and run android project: There is not user and password only push LOGIN
