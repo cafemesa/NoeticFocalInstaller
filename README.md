@@ -1,4 +1,4 @@
-# Turtlebot 2 on Ubuntu 20.04 and WSL
+# ROS Noetic Installer for Ubuntu 20.04 and WSL with compatibility for Turtlebot 2
 
 ## 1. Install Ubuntu 20.04
 
@@ -99,4 +99,48 @@ sudo gedit /opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py
 
 1. 3D LiDAR
     - First terminal: `roslaunch project_2021 People_Detection_velodyne.launch`
+
+
+# For Java Programers
+
+This installer includes a version of rosjava compatible with ROS Noetic, with which you can create Java-based projects and packages.
+
+## 1. Create a ROS Java package
+
+```
+cd ~/catkin_ws/src
+catkin_create_rosjava_pkg [PACKAGE_NAME]
+cd ~/catkin_ws
+catkin_make
+```
+
+## 2. Create a ROS Java project
+
+```
+cd ~/catkin_ws/src/[PACKAGE_NAME]
+catkin_create_rosjava_project [PROJECT_NAME]
+cd ~/catkin_ws
+catkin_make
+```
+
+## 3. Run example files
+
+1. First terminal
+
+```
+roscore
+```
+
+2. Second terminal
+
+```
+rosrun [PACKAGE_NAME] [PROJECT_NAME] com.github.rosjava.[PACKAGE_NAME].[PROJECT_NAME].Talker
+```
+
+3. Third terminal
+
+```
+rosrun [PACKAGE_NAME] [PROJECT_NAME] com.github.rosjava.[PACKAGE_NAME].[PROJECT_NAME].Listener
+```
+
 
