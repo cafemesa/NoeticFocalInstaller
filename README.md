@@ -45,8 +45,8 @@ We have created some scripts to facilitate the installation of ROS and the packa
 ```
 cd ~/ 
 sudo apt-get install git -y
-git clone https://github.com/cafemesa/Focal_Noetic_WSL
-cd ~/Focal_Noetic_WSL/
+git clone https://github.com/cafemesa/NoeticFocalInstaller
+cd ~/NoeticFocalInstaller/
 ```
 
 ### 2.1. For Ubuntu WSL on Windows 
